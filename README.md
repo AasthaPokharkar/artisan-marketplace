@@ -1,6 +1,6 @@
 # 🪷 KalaKriti — Authentic Indian Artisan Marketplace
 
-A complete, responsive, and interactive artisan marketplace website built with **HTML5, CSS3, and Vanilla JavaScript** for college hackathon presentations.
+A complete, responsive, and interactive artisan marketplace website built with **HTML5, CSS3, and Vanilla JavaScript**.
 
 KalaKriti directly bridges traditional Indian master craftspersons (weavers, potters, folk artists, and metal smiths) with buyers worldwide, ensuring fair wages, GI-tagged authenticity, and cultural preservation.
 
@@ -44,7 +44,7 @@ If using VS Code:
 
 ---
 
-## ✨ Features Built for Your Hackathon
+## ✨ Features Built
 
 ### 1. 🏡 Indian Handicraft Themed Homepage
 - **Indian Cultural Aesthetics**: Warm terracotta (`#A0391D`), royal indigo (`#162C4E`), haldi/marigold gold (`#D48928`), and raw silk ivory (`#FAF6F0`).
@@ -139,25 +139,3 @@ artisan-marketplace/
         ├── index.html
         ├── style.css
         └── app.js
-```
-
----
-
-## 🎤 Hackathon Presentation Tips
-
-When presenting this project to hackathon judges:
-
-1. **The Problem**: Over 20 million Indian artisans struggle because middlemen and showroom aggregators keep 70-80% of profits, while younger generations abandon heritage crafts.
-2. **Your Solution (KalaKriti)**: Direct-to-consumer marketplace with zero listing fees, transparent 85%+ artisan payouts, GI-tag preservation, and a built-in AI story assistant for non-technical artisans.
-3. **Demo Sequence**:
-   - Show the **Homepage & Indian Handicraft visuals**.
-   - Type *"Silk"* or *"Blue Pottery"* in the **Live Search** or click a **Category Pill**.
-   - Open **Quick View** to show the craft heritage story and specifications.
-   - Click **Add to Bag** to show the **Cart Drawer**, progress bar, and apply coupon `HACKATHON10`.
-   - Click **Proceed to Checkout** and complete an order to see the celebration receipt!
-   - Navigate to **Sell as Artisan**, fill in a new craft, and show how it **instantly appears live** in the marketplace!
-   - Demo the **AI Craft Studio** to show technological empowerment for rural artisans.
-4. **Key Strengths**:
-   - Zero paid APIs or external dependencies.
-   - 100% responsive on phones, tablets, and desktops.
-   - Full data persistence using browser `localStorage`.
