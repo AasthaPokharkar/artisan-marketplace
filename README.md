@@ -96,7 +96,7 @@ If using VS Code:
 - **Digital Artisan ID Card**: Generates a verified KalaKriti Artisan ID card (`ART-2026-XXXX`).
 - **Artisan Dashboard / Studio**: Track listed crafts, profile visits, and delete or manage items.
 
-### 7. 🤖 AI Craft Story Studio (Bonus Hackathon Pitch!)
+### 7. 🤖 AI Craft Story Studio
 - An in-browser copilot tailored for rural artisans with limited copywriting skills.
 - Choose any product and storytelling tone:
   - 👑 Royal Heritage & Tradition
