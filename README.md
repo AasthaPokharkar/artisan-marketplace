@@ -6,7 +6,7 @@ KalaKriti directly bridges traditional Indian master craftspersons (weavers, pot
 
 ---
 
-## 🚀 How to Run the Website
+## How to Run the Website
 
 You don't need to install any complex packages or backend databases! You have 3 easy ways to run the website:
 
@@ -24,7 +24,7 @@ Open PowerShell or Command Prompt in this folder and run:
 python -m http.server 3000
 ```
 Then open your browser and go to:
-👉 **[http://localhost:3000](http://localhost:3000)**
+**[http://localhost:3000](http://localhost:3000)**
 
 ---
 
@@ -44,7 +44,7 @@ If using VS Code:
 
 ---
 
-## ✨ Features Built
+## Features 
 
 ### 1. 🏡 Indian Handicraft Themed Homepage
 - **Indian Cultural Aesthetics**: Warm terracotta (`#A0391D`), royal indigo (`#162C4E`), haldi/marigold gold (`#D48928`), and raw silk ivory (`#FAF6F0`).
@@ -99,10 +99,10 @@ If using VS Code:
 ### 7. 🤖 AI Craft Story Studio
 - An in-browser copilot tailored for rural artisans with limited copywriting skills.
 - Choose any product and storytelling tone:
-  - 👑 Royal Heritage & Tradition
-  - ❤️ Warm, Emotional & Maker Story
-  - 🪔 Festive & Gifting Special
-  - 🌍 Global Collector & Modern Elegance
+  - Royal Heritage & Tradition
+  - Warm, Emotional & Maker Story
+  - Festive & Gifting Special
+  - Global Collector & Modern Elegance
 - Generates:
   - Engaging e-commerce product copy.
   - Instagram captions with hashtags (`#VocalForLocal`, `#MakeInIndia`, `#IndianHandicrafts`).
