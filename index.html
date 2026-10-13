@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KalaKriti - India's authentic artisan marketplace connecting traditional handicraft masters with buyers worldwide. Handloom, Blue Pottery, Dhokra, Madhubani and more.">
+    <title>KalaKriti | Authentic Indian Artisan Marketplace</title>
+
+    <!-- Google Fonts: Playfair Display (Serif) & Plus Jakarta Sans (Modern Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">
+        <div class="container announcement-inner">
+            <span>🇮🇳 <strong>National Handicraft Celebration:</strong> Free All-India Shipping on orders above ₹1,499!</span>
+            <span class="coupon-hint">Use code <strong class="badge-code">HACKATHON10</strong> for 10% instant discount</span>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <header class="site-header" id="header">
+        <div class="container nav-container">
+            <!-- Brand Logo -->
+            <a href="#home" class="brand-logo" aria-label="KalaKriti Home">
+                <span class="brand-symbol">🪷</span>
+                <span class="brand-text">
+                    <span class="brand-name">Kala<span class="accent-text">Kriti</span></span>
+                    <span class="brand-tagline">ARTISANAL HERITAGE OF INDIA</span>
+                </span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#marketplace" class="nav-link">Discover Crafts</a>
+                <a href="#categories" class="nav-link">Craft Traditions</a>
+                <a href="#artisans" class="nav-link">Artisan Spotlight</a>
+                <a href="#register" class="nav-link">Sell as Artisan</a>
+                <a href="#ai-studio" class="nav-link">AI Craft Studio</a>
+            </nav>
+
+            <!-- Nav Actions (Search, Wishlist, Cart, Register) -->
+            <div class="nav-actions">
+                <button class="nav-btn" id="openSearchBtn" title="Search Crafts" aria-label="Quick Search">
+                    <span class="icon">🔍</span>
+                </button>
+
+                <button class="nav-btn" id="wishlistToggleBtn" title="Saved Wishlist" aria-label="Saved Items">
+                    <span class="icon">🤍</span>
+                    <span class="badge" id="wishlistCount">0</span>
+                </button>
+
+                <!-- Cart Button -->
+                <button class="nav-btn cart-btn" id="cartToggleBtn" aria-label="Open Shopping Cart">
+                    <span class="icon">🛍️</span>
+                    <span class="cart-label">Cart</span>
+                    <span class="badge cart-badge" id="cartCount">0</span>
+                </button>
+
+                <!-- Artisan Action Button -->
+                <a href="#register" class="btn btn-primary btn-sm register-btn">
+                    <span>✦ Register as Artisan</span>
+                </a>
+
+                <!-- Mobile Menu Hamburger -->
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="mainContent">
+
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="heritage-badge">
+                        <span class="badge-dot"></span>
+                        <span>100% AUTHENTIC INDIAN HANDICRAFTS • FAIR TRADE CERTIFIED</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Every Craft Has a Soul.<br>
+                        <em>Meet the Makers</em> Behind India's Heritage.
+                    </h1>
+
+                    <p class="hero-description">
+                        Directly discover and buy handmade masterpieces from master weavers, sculptors, and folk artists across 28 states. No middlemen. Fair wages directly to artisan families.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#marketplace" class="btn btn-primary btn-lg">
+                            <span>Explore 200+ Crafts ➔</span>
+                        </a>
+                        <a href="#register" class="btn btn-outline btn-lg">
+                            <span>Join as an Artisan ✍️</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats Row -->
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">1,200+</span>
+                            <span class="stat-desc">Rural Artisans</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">28</span>
+                            <span class="stat-desc">Indian States</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-desc">Direct Earnings</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">GI</span>
+                            <span class="stat-desc">Tagged Crafts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual Showcase -->
+                <div class="hero-visual">
+                    <div class="visual-card-main">
+                        <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=1000&q=85" 
+                             alt="Jaipur Blue Pottery Masterpiece"
+                             class="hero-img"
+                             onerror="this.onerror=null;this.src='https://placehold.co/700x500/f4e8dd/8b4b2b?text=Jaipur+Blue+Pottery';">
+                        
+                        <div class="floating-craft-card">
+                            <span class="craft-icon">🏺</span>
+                            <div>
+                                <span class="craft-name">Jaipur Blue Pottery</span>
+                                <span class="craft-origin">Rajasthan • GI Tagged</span>
+                            </div>
+                            <span class="craft-price">₹1,450</span>
+                        </div>
+
+                        <div class="artisan-guarantee-badge">
+                            <span class="badge-star">★</span>
+                            <div>
+                                <strong>Direct Maker Fair Pay</strong>
+                                <small>85%+ goes directly to the family</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-decorative-pattern" aria-hidden="true"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VALUE PROPOSITION STRIP -->
+        <section class="trust-strip">
+            <div class="container trust-grid">
+                <div class="trust-card">
+                    <div class="trust-icon-box">🪷</div>
+                    <div>
+                        <h4>GI Tagged Authenticity</h4>
+                        <p>Certified regional crafts carrying centuries of geographical heritage.</p>
+                    </div>
+                </div>
+
+                <div class="trust-card">
+                    <div class="trust-icon-box">🤝</div>
+                    <div>
+                        <h4>Zero Middlemen</h4>
+                        <p>100% transparent pricing directly supporting rural artisan clusters.</p>
+                    </div>
+                </div>
+
+                <div class="trust-card">
+                    <div class="trust-icon-box">🌿</div>
+                    <div>
+                        <h4>Eco-Friendly & Natural</h4>
+                        <p>Organic clays, natural plant dyes, and sustainable hand-loomed fibers.</p>
+                    </div>
+                </div>
+
+                <div class="trust-card">
+                    <div class="trust-icon-box">📦</div>
+                    <div>
+                        <h4>Safe All-India Delivery</h4>
+                        <p>Specialized protective packaging with door-to-door transit insurance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CRAFT TRADITIONS / CATEGORIES CAROUSEL -->
+        <section class="section categories-section" id="categories">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag">HERITAGE CLUSTERS</span>
+                    <h2 class="section-title">Explore Indian Craft Traditions</h2>
+                    <p class="section-subtitle">Discover diverse artisan traditions honed through centuries across regional kingdoms.</p>
+                </div>
+
+                <div class="categories-grid">
+                    <div class="category-card" data-category="Pottery & Ceramics">
+                        <div class="cat-img-box">
+                            <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=600&q=80" 
+                                 alt="Pottery & Ceramics"
+                                 onerror="this.onerror=null;this.src='https://placehold.co/400x300/f4e8dd/8b4b2b?text=Pottery';">
+                            <span class="cat-count">4 Products</span>
+                        </div>
+                        <div class="cat-info">
+                            <span class="cat-emoji">🏺</span>
+                            <h3>Pottery & Ceramics</h3>
+                            <p>Jaipur Blue Pottery, Terracotta & Khurja ceramics</p>
+                        </div>
+                    </div>
+
+                    <div class="category-card" data-category="Handloom & Textiles">
+                        <div class="cat-img-box">
+                            <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80" 
+                                 alt="Handloom & Textiles"
+                                 onerror="this.onerror=null;this.src='https://placehold.co/400x300/f4e8dd/8b4b2b?text=Handloom';">
+                            <span class="cat-count">3 Products</span>
+                        </div>
+                        <div class="cat-info">
+                            <span class="cat-emoji">🧵</span>
+                            <h3>Handloom & Textiles</h3>
+                            <p>Banarasi Silks, Pashmina shawls & Kutch Rogan</p>
+                        </div>
+                    </div>
+
+                    <div class="category-card" data-category="Folk Art & Paintings">
+                        <div class="cat-img-box">
+                            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=600&q=80" 
+                                 alt="Folk Art & Paintings"
+                                 onerror="this.onerror=null;this.src='https://placehold.co/400x300/f4e8dd/8b4b2b?text=Folk+Art';">
+                            <span class="cat-count">2 Products</span>
+                        </div>
+                        <div class="cat-info">
+                            <span class="cat-emoji">🎨</span>
+                            <h3>Folk Art & Paintings</h3>
+                            <p>Madhubani Mithila, Tanjore Gold & Warli tribal art</p>
+                        </div>
+                    </div>
+
+                    <div class="category-card" data-category="Brass & Metalcraft">
+                        <div class="cat-img-box">
+                            <img src="https://images.unsplash.com/photo-1584905066893-7d5c142ba4e1?auto=format&fit=crop&w=600&q=80" 
+                                 alt="Brass & Metalcraft"
+                                 onerror="this.onerror=null;this.src='https://placehold.co/400x300/f4e8dd/8b4b2b?text=Brass+Craft';">
+                            <span class="cat-count">2 Products</span>
+                        </div>
+                        <div class="cat-info">
+                            <span class="cat-emoji">🪔</span>
+                            <h3>Brass & Metalcraft</h3>
+                            <p>Dhokra lost-wax casting & Moradabad carved brass</p>
+                        </div>
+                    </div>
+
+                    <div class="category-card" data-category="Wooden Crafts">
+                        <div class="cat-img-box">
+                            <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=600&q=80" 
+                                 alt="Wooden Crafts"
+                                 onerror="this.onerror=null;this.src='https://placehold.co/400x300/f4e8dd/8b4b2b?text=Wooden+Crafts';">
+                            <span class="cat-count">2 Products</span>
+                        </div>
+                        <div class="cat-info">
+                            <span class="cat-emoji">🪵</span>
+                            <h3>Wooden Crafts</h3>
+                            <p>Channapatna natural toys & Saharanpur carved jali</p>
+                        </div>
+                    </div>
+
+                    <div class="category-card" data-category="Leather & Footwear">
+                        <div class="cat-img-box">
+                            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80" 
+                                 alt="Leather & Footwear"
+                                 onerror="this.onerror=null;this.src='https://placehold.co/400x300/f4e8dd/8b4b2b?text=Mojari+Footwear';">
+                            <span class="cat-count">1 Product</span>
+                        </div>
+                        <div class="cat-info">
+                            <span class="cat-emoji">👞</span>
+                            <h3>Leather & Footwear</h3>
+                            <p>Rajasthani embroidered mojaris & Kolhapuri chappals</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MARKETPLACE / PRODUCT LISTINGS SECTION -->
+        <section class="section marketplace-section" id="marketplace">
+            <div class="container">
+                
+                <!-- Section Heading -->
+                <div class="section-header">
+                    <div>
+                        <span class="section-tag">CURATED COLLECTION</span>
+                        <h2 class="section-title">Discover Handcrafted Masterpieces</h2>
+                        <p class="section-subtitle">Authentic pieces directly sourced from verified Indian artisanal homes.</p>
+                    </div>
+                    <div class="live-counter-pill" id="liveCounterPill">
+                        <span class="pulse-dot"></span>
+                        <span id="marketItemCountText">12 Crafts Available</span>
+                    </div>
+                </div>
+
+                <!-- Search and Filtering Bar -->
+                <div class="filters-container">
+                    
+                    <!-- Search Input Box -->
+                    <div class="search-bar">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" id="searchInput" placeholder="Search by craft, artisan, material (e.g. Blue Pottery, Silk, Brass)..." aria-label="Search craft products">
+                        <button class="clear-search-btn hidden" id="clearSearchBtn" title="Clear search">✕</button>
+                    </div>
+
+                    <!-- Dropdowns Row -->
+                    <div class="filter-controls-row">
+                        <!-- Category Filter Dropdown -->
+                        <div class="select-wrapper">
+                            <label for="categoryFilter" class="sr-only">Category</label>
+                            <select id="categoryFilter">
+                                <option value="All">All Craft Traditions</option>
+                                <option value="Pottery & Ceramics">Pottery & Ceramics</option>
+                                <option value="Handloom & Textiles">Handloom & Textiles</option>
+                                <option value="Folk Art & Paintings">Folk Art & Paintings</option>
+                                <option value="Brass & Metalcraft">Brass & Metalcraft</option>
+                                <option value="Wooden Crafts">Wooden Crafts</option>
+                                <option value="Leather & Footwear">Leather & Footwear</option>
+                            </select>
+                        </div>
+
+                        <!-- State / Region Filter Dropdown -->
+                        <div class="select-wrapper">
+                            <label for="stateFilter" class="sr-only">State / Region</label>
+                            <select id="stateFilter">
+                                <option value="All">All Indian States</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="West Bengal">West Bengal</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                            </select>
+                        </div>
+
+                        <!-- Price Range Filter Dropdown -->
+                        <div class="select-wrapper">
+                            <label for="priceFilter" class="sr-only">Price Range</label>
+                            <select id="priceFilter">
+                                <option value="All">All Prices</option>
+                                <option value="under-1000">Under ₹1,000</option>
+                                <option value="1000-2500">₹1,000 to ₹2,500</option>
+                                <option value="2500-5000">₹2,500 to ₹5,000</option>
+                                <option value="above-5000">Above ₹5,000</option>
+                            </select>
+                        </div>
+
+                        <!-- Sort By Dropdown -->
+                        <div class="select-wrapper">
+                            <label for="sortFilter" class="sr-only">Sort by</label>
+                            <select id="sortFilter">
+                                <option value="featured">✨ Featured & Popular</option>
+                                <option value="price-asc">Price: Low to High</option>
+                                <option value="price-desc">Price: High to Low</option>
+                                <option value="rating">★ Highest Customer Rating</option>
+                                <option value="name">A – Z Name</option>
+                            </select>
+                        </div>
+
+                        <!-- GI Tag Toggle -->
+                        <label class="gi-toggle-label" title="Show only Geographical Indication tagged crafts">
+                            <input type="checkbox" id="giTagOnly">
+                            <span class="toggle-custom"></span>
+                            <span class="toggle-text">🏅 GI Tagged Only</span>
+                        </label>
+                    </div>
+
+                    <!-- Category Pills Quick Bar -->
+                    <div class="category-pills-bar" id="categoryPills">
+                        <button class="pill-btn active" data-category="All">All Crafts</button>
+                        <button class="pill-btn" data-category="Pottery & Ceramics">🏺 Pottery</button>
+                        <button class="pill-btn" data-category="Handloom & Textiles">🧵 Handloom</button>
+                        <button class="pill-btn" data-category="Folk Art & Paintings">🎨 Folk Art</button>
+                        <button class="pill-btn" data-category="Brass & Metalcraft">🪔 Brassware</button>
+                        <button class="pill-btn" data-category="Wooden Crafts">🪵 Woodcraft</button>
+                        <button class="pill-btn" data-category="Leather & Footwear">👞 Leather</button>
+                    </div>
+
+                    <!-- Active Filters Indicator & Reset -->
+                    <div class="active-filter-status" id="activeFilterStatus">
+                        <span id="filterSummaryText">Showing all authentic items</span>
+                        <button class="reset-filters-btn hidden" id="resetFiltersBtn">Reset all filters ✕</button>
+                    </div>
+
+                </div>
+
+                <!-- Product Cards Grid -->
+                <div class="products-grid" id="productsGrid" aria-live="polite">
+                    <!-- Populated dynamically by JavaScript -->
+                </div>
+
+                <!-- Empty State Message (shown when no results match) -->
+                <div class="empty-state hidden" id="emptyState">
+                    <div class="empty-icon">🪷</div>
+                    <h3>No crafts found matching your filters</h3>
+                    <p>Try searching for a different craft name, changing region, or clearing active filters.</p>
+                    <button class="btn btn-outline" id="emptyResetBtn">Clear All Filters</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ARTISAN SPOTLIGHT SECTION -->
+        <section class="section artisans-section" id="artisans">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag">VOICES OF TRADITION</span>
+                    <h2 class="section-title">Meet Master Craftspersons</h2>
+                    <p class="section-subtitle">Real people whose hands, memory, and generational passion keep India's living heritage alive.</p>
+                </div>
+
+                <div class="artisans-grid">
+                    
+                    <!-- Artisan 1 -->
+                    <div class="artisan-spotlight-card">
+                        <div class="artisan-header">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80" 
+                                 alt="Sunita Jha - Madhubani Artist" 
+                                 class="artisan-avatar"
+                                 onerror="this.onerror=null;this.src='https://placehold.co/120x120/f4e8dd/8b4b2b?text=Sunita';">
+                            <div>
+                                <h3 class="artisan-name">Sunita Jha</h3>
+                                <span class="artisan-origin">Madhubani, Bihar</span>
+                                <span class="badge-gi">🏅 State Awardee</span>
+                            </div>
+                        </div>
+                        <p class="artisan-quote">
+                            "My grandmother taught me how to extract natural yellow from turmeric and blue from indigo. Each Mithila painting carries sacred blessings of prosperity."
+                        </p>
+                        <div class="artisan-meta">
+                            <span><strong>Craft:</strong> Madhubani Folk Art</span>
+                            <span><strong>Experience:</strong> 26 Years</span>
+                        </div>
+                        <button class="btn btn-sm btn-outline btn-full" onclick="filterByArtisan('Sunita Jha')">
+                            View Sunita's Artworks ➔
+                        </button>
+                    </div>
+
+                    <!-- Artisan 2 -->
+                    <div class="artisan-spotlight-card">
+                        <div class="artisan-header">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" 
+                                 alt="Rameshwar Kumhar - Blue Pottery" 
+                                 class="artisan-avatar"
+                                 onerror="this.onerror=null;this.src='https://placehold.co/120x120/f4e8dd/8b4b2b?text=Rameshwar';">
+                            <div>
+                                <h3 class="artisan-name">Rameshwar Kumhar</h3>
+                                <span class="artisan-origin">Jaipur, Rajasthan</span>
+                                <span class="badge-gi">🏺 4th Gen Master</span>
+                            </div>
+                        </div>
+                        <p class="artisan-quote">
+                            "Jaipur Blue pottery is unlike any other craft on earth; we do not use clay at all, but ground quartz and Egyptian paste. It takes 15 days of patient work."
+                        </p>
+                        <div class="artisan-meta">
+                            <span><strong>Craft:</strong> Jaipur Blue Pottery</span>
+                            <span><strong>Experience:</strong> 34 Years</span>
+                        </div>
+                        <button class="btn btn-sm btn-outline btn-full" onclick="filterByArtisan('Rameshwar Kumhar')">
+                            View Rameshwar's Pottery ➔
+                        </button>
+                    </div>
+
+                    <!-- Artisan 3 -->
+                    <div class="artisan-spotlight-card">
+                        <div class="artisan-header">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" 
+                                 alt="Ustad Rahim Ansari - Banarasi Weaver" 
+                                 class="artisan-avatar"
+                                 onerror="this.onerror=null;this.src='https://placehold.co/120x120/f4e8dd/8b4b2b?text=Rahim';">
+                            <div>
+                                <h3 class="artisan-name">Ustad Rahim Ansari</h3>
+                                <span class="artisan-origin">Varanasi, Uttar Pradesh</span>
+                                <span class="badge-gi">🧵 National Weaver</span>
+                            </div>
+                        </div>
+                        <p class="artisan-quote">
+                            "A single Banarasi pure silk saree with pure zari takes two master weavers nearly four continuous weeks on the wooden pit-loom. The rhythm is our prayer."
+                        </p>
+                        <div class="artisan-meta">
+                            <span><strong>Craft:</strong> Banarasi Handloom</span>
+                            <span><strong>Experience:</strong> 42 Years</span>
+                        </div>
+                        <button class="btn btn-sm btn-outline btn-full" onclick="filterByArtisan('Ustad Rahim Ansari')">
+                            View Rahim's Handlooms ➔
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ARTISAN REGISTRATION & STUDIO SECTION -->
+        <section class="section register-section" id="register">
+            <div class="container">
+                <div class="register-layout">
+                    
+                    <!-- Left: Onboarding Info & Value Proposition -->
+                    <div class="register-info-panel">
+                        <span class="section-tag">JOIN THE MOVEMENT</span>
+                        <h2>Are you an Indian Artisan or Craftsperson?</h2>
+                        <p>
+                            Take your craft to buyers across India and worldwide. KalaKriti charges <strong>0% listing commission</strong> and guarantees fair direct payments straight to your bank or UPI.
+                        </p>
+
+                        <div class="perks-list">
+                            <div class="perk-item">
+                                <span class="perk-icon">✓</span>
+                                <div>
+                                    <strong>Instant Digital Storefront</strong>
+                                    <p>Your own artisan page and digital catalogue without technical hassle.</p>
+                                </div>
+                            </div>
+
+                            <div class="perk-item">
+                                <span class="perk-icon">✓</span>
+                                <div>
+                                    <strong>GI Tag & Heritage Recognition</strong>
+                                    <p>Get recognized as a verified guardian of Indian handicraft heritage.</p>
+                                </div>
+                            </div>
+
+                            <div class="perk-item">
+                                <span class="perk-icon">✓</span>
+                                <div>
+                                    <strong>Fair Value Directly To You</strong>
+                                    <p>No intermediaries eating up your margin. Direct customer connection.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Live Artisan Stats & Certificate Card -->
+                        <div class="artisan-badge-card" id="artisanIdCard">
+                            <div class="id-card-top">
+                                <span>🇮🇳 KALAKRITI ARTISAN IDENTITY</span>
+                                <span class="status-live">ACTIVE STATUS</span>
+                            </div>
+                            <div class="id-card-body">
+                                <div class="id-avatar" id="idAvatarPreview">MK</div>
+                                <div>
+                                    <h4 id="idNamePreview">Meera Kulkarni</h4>
+                                    <p id="idCraftPreview">Terracotta & Clay Artisan</p>
+                                    <small id="idLocationPreview">Pune, Maharashtra</small>
+                                </div>
+                            </div>
+                            <div class="id-card-footer">
+                                <span>ID: <code id="idNumberPreview">ART-2026-9481</code></span>
+                                <span>Verified Maker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Multi-Step Registration & Product Listing Form -->
+                    <div class="register-form-card">
+                        <div class="form-tabs">
+                            <button class="form-tab-btn active" id="tabRegisterBtn" type="button">1. Artisan Registration</button>
+                            <button class="form-tab-btn" id="tabStudioBtn" type="button">2. My Artisan Studio (<span id="myProductsCount">0</span>)</button>
+                        </div>
+
+                        <!-- TAB 1: REGISTRATION & PRODUCT SUBMISSION -->
+                        <div class="tab-pane active" id="paneRegister">
+                            <form id="artisanRegistrationForm" novalidate>
+                                
+                                <h3 class="form-subheading">Step 1: Artisan Profile Details</h3>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="regArtisanName">Full Name / Maker Name <span class="required">*</span></label>
+                                        <input type="text" id="regArtisanName" placeholder="e.g. Meera Kulkarni" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="regStudioName">Studio or Gharana Name</label>
+                                        <input type="text" id="regStudioName" placeholder="e.g. Kulkarni Clay Traditions">
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="regState">State / Union Territory <span class="required">*</span></label>
+                                        <select id="regState" required>
+                                            <option value="">Select your state</option>
+                                            <option value="Rajasthan">Rajasthan</option>
+                                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                            <option value="Bihar">Bihar</option>
+                                            <option value="Karnataka">Karnataka</option>
+                                            <option value="West Bengal">West Bengal</option>
+                                            <option value="Gujarat">Gujarat</option>
+                                            <option value="Maharashtra">Maharashtra</option>
+                                            <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+                                            <option value="Chhattisgarh">Chhattisgarh</option>
+                                            <option value="Tamil Nadu">Tamil Nadu</option>
+                                            <option value="Odisha">Odisha</option>
+                                            <option value="Other">Other Region</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="regCity">City / Craft Village <span class="required">*</span></label>
+                                        <input type="text" id="regCity" placeholder="e.g. Jaipur, Pune, Bastar" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="regPhone">Contact Number / WhatsApp <span class="required">*</span></label>
+                                        <input type="tel" id="regPhone" placeholder="e.g. +91 98765 43210" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="regExperience">Years of Craft Heritage</label>
+                                        <input type="text" id="regExperience" placeholder="e.g. 15 Years / 3rd Generation">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="regBio">Your Artisan Story & Technique <span class="required">*</span></label>
+                                    <textarea id="regBio" rows="2" placeholder="Tell buyers about how you create your craft, family lineage, materials used..." required></textarea>
+                                </div>
+
+                                <h3 class="form-subheading divider-top">Step 2: List Your First Sample Craft</h3>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="prodTitle">Product Name <span class="required">*</span></label>
+                                        <input type="text" id="prodTitle" placeholder="e.g. Hand-Carved Rosewood Elephant" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="prodCategory">Craft Category <span class="required">*</span></label>
+                                        <select id="prodCategory" required>
+                                            <option value="">Choose category</option>
+                                            <option value="Pottery & Ceramics">Pottery & Ceramics</option>
+                                            <option value="Handloom & Textiles">Handloom & Textiles</option>
+                                            <option value="Folk Art & Paintings">Folk Art & Paintings</option>
+                                            <option value="Brass & Metalcraft">Brass & Metalcraft</option>
+                                            <option value="Wooden Crafts">Wooden Crafts</option>
+                                            <option value="Leather & Footwear">Leather & Footwear</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="prodPrice">Price in INR (₹) <span class="required">*</span></label>
+                                        <input type="number" id="prodPrice" min="50" max="500000" placeholder="e.g. 1250" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="prodMaterial">Primary Material Used <span class="required">*</span></label>
+                                        <input type="text" id="prodMaterial" placeholder="e.g. Sheesham wood, Terracotta, Silk" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="prodImageUrl">Product Image URL (Optional)</label>
+                                    <input type="url" id="prodImageUrl" placeholder="https://example.com/my-craft.jpg (leave blank for auto Indian craft image)">
+                                    <small class="form-hint">Tip: If left blank, an authentic handcrafted craft placeholder will be generated automatically.</small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="prodStory">Product Description & Craft Story <span class="required">*</span></label>
+                                    <textarea id="prodStory" rows="2" placeholder="Detailed craft story: dimensions, care instructions, and uniqueness..." required></textarea>
+                                </div>
+
+                                <div class="form-check-group">
+                                    <input type="checkbox" id="regGiTag" checked>
+                                    <label for="regGiTag">I certify that this craft is 100% genuine handmade Indian handicraft.</label>
+                                </div>
+
+                                <div class="form-actions-bar">
+                                    <button type="submit" class="btn btn-primary btn-full" id="submitArtisanBtn">
+                                        <span>Register & Publish First Craft ➔</span>
+                                    </button>
+                                </div>
+
+                                <p class="form-security-note">
+                                    🔒 Hackathon Demo: All submitted data is immediately stored locally in your browser and appears live in the marketplace!
+                                </p>
+                            </form>
+                        </div>
+
+                        <!-- TAB 2: MY ARTISAN STUDIO / DASHBOARD -->
+                        <div class="tab-pane hidden" id="paneStudio">
+                            <div class="studio-content">
+                                <div class="studio-header">
+                                    <div>
+                                        <h4>Artisan Dashboard</h4>
+                                        <p>Manage your listed crafts and monitor buyer visits.</p>
+                                    </div>
+                                    <button class="btn btn-sm btn-outline" id="studioNewCraftBtn">＋ Add Another Craft</button>
+                                </div>
+
+                                <!-- Metrics -->
+                                <div class="studio-metrics-row">
+                                    <div class="metric-box">
+                                        <span class="metric-val" id="metricProductsCount">0</span>
+                                        <span class="metric-lbl">Listed Crafts</span>
+                                    </div>
+                                    <div class="metric-box">
+                                        <span class="metric-val" id="metricViews">148</span>
+                                        <span class="metric-lbl">Profile Visits</span>
+                                    </div>
+                                    <div class="metric-box">
+                                        <span class="metric-val">100%</span>
+                                        <span class="metric-lbl">Direct Payout</span>
+                                    </div>
+                                </div>
+
+                                <!-- My Listings Grid -->
+                                <div class="my-listings-container">
+                                    <h5>Your Current Marketplace Listings</h5>
+                                    <div id="myListingsGrid" class="my-listings-grid">
+                                        <!-- Populated via JS -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI CRAFT STORY STUDIO (FOR ARTISANS) -->
+        <section class="section ai-studio-section" id="ai-studio">
+            <div class="container">
+                <div class="ai-studio-card">
+                    <div class="ai-studio-header">
+                        <div class="ai-badge">
+                            <span>✧ KALAKRITI AI COPILOT</span>
+                            <span class="badge-free">100% FREE & LOCAL</span>
+                        </div>
+                        <h2>Smart Craft Story & Catalogue Assistant</h2>
+                        <p>Helps traditional artisans write compelling product descriptions, Instagram stories, and care notes with zero copywriting experience.</p>
+                    </div>
+
+                    <div class="ai-studio-body">
+                        <form id="aiStoryForm" class="ai-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="aiProductSelect">Select Craft to Generate Copy For</label>
+                                    <select id="aiProductSelect">
+                                        <!-- Populated via JS -->
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="aiToneSelect">Storytelling Tone</label>
+                                    <select id="aiToneSelect">
+                                        <option value="heritage">👑 Royal Heritage & Tradition</option>
+                                        <option value="storytelling">❤️ Warm, Emotional & Maker Story</option>
+                                        <option value="festive">🪔 Festive & Gifting Special</option>
+                                        <option value="export">🌍 Global Collector & Modern Elegance</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="aiKeywords">Keywords or Details to Highlight (Optional)</label>
+                                <input type="text" id="aiKeywords" placeholder="e.g. vegetable dyes, 3 weeks making time, child safe, royal court gift">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" id="generateCopyBtn">
+                                <span>✧ Generate Craft Story & Social Copy</span>
+                            </button>
+                        </form>
+
+                        <!-- Generated Output -->
+                        <div class="ai-output-box hidden" id="aiOutputBox">
+                            <div class="output-top-bar">
+                                <span class="output-title">✨ GENERATED CRAFT STORYBOARD</span>
+                                <button class="btn btn-sm btn-outline" id="copyAiStoryBtn" type="button">📋 Copy to Clipboard</button>
+                            </div>
+                            
+                            <div class="output-content" id="aiOutputContent">
+                                <!-- Generated text goes here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BUYER REVIEWS & TESTIMONIALS -->
+        <section class="section reviews-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag">LOVED BY BUYERS</span>
+                    <h2 class="section-title">What Craft Connoisseurs Say</h2>
+                    <p class="section-subtitle">Real people celebrating authentic handicrafts delivered with heartfelt care.</p>
+                </div>
+
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">
+                            "The Jaipur Blue Pottery vase arrived in triple-layered eco padding with a handwritten postcard from master artisan Rameshwar Kumhar. Truly breathtaking craftsmanship!"
+                        </p>
+                        <div class="reviewer-info">
+                            <strong>Ananya Sengupta</strong>
+                            <small>Verified Buyer • New Delhi</small>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">
+                            "Finding an authentic Banarasi Katan silk saree without showroom markups felt impossible until KalaKriti. You can feel the master weaver's devotion in every gold zari weave."
+                        </p>
+                        <div class="reviewer-info">
+                            <strong>Rohit & Sneha Verma</strong>
+                            <small>Verified Buyer • Bengaluru</small>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">
+                            "The Bastar Dhokra figurine has such an ancient, rustic soul. Knowing 85% of my money reached Ganga Devi directly makes this purchase deeply satisfying."
+                        </p>
+                        <div class="reviewer-info">
+                            <strong>Dr. Marcus Lee</strong>
+                            <small>Folk Art Collector • Mumbai</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <a href="#home" class="brand-logo footer-logo">
+                    <span class="brand-symbol">🪷</span>
+                    <span class="brand-text">
+                        <span class="brand-name">Kala<span class="accent-text">Kriti</span></span>
+                        <span class="brand-tagline">ARTISANAL HERITAGE OF INDIA</span>
+                    </span>
+                </a>
+                <p class="footer-desc">
+                    Empowering Indian rural artisans, preserving ancient handicraft techniques, and delivering museum-quality authentic pieces directly to homes worldwide.
+                </p>
+                <div class="social-links">
+                    <a href="#marketplace" title="Instagram">📸</a>
+                    <a href="#marketplace" title="Facebook">📘</a>
+                    <a href="#marketplace" title="Twitter/X">🐦</a>
+                    <a href="#marketplace" title="WhatsApp Support">💬</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Craft Traditions</h4>
+                <ul class="footer-links">
+                    <li><a href="#marketplace" onclick="filterByCategory('Pottery & Ceramics')">Jaipur Blue Pottery</a></li>
+                    <li><a href="#marketplace" onclick="filterByCategory('Handloom & Textiles')">Banarasi Katan Silks</a></li>
+                    <li><a href="#marketplace" onclick="filterByCategory('Folk Art & Paintings')">Madhubani Mithila Art</a></li>
+                    <li><a href="#marketplace" onclick="filterByCategory('Brass & Metalcraft')">Bastar Dhokra Casting</a></li>
+                    <li><a href="#marketplace" onclick="filterByCategory('Wooden Crafts')">Channapatna Wooden Toys</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Marketplace</h4>
+                <ul class="footer-links">
+                    <li><a href="#marketplace">All Products</a></li>
+                    <li><a href="#register">Artisan Registration</a></li>
+                    <li><a href="#artisans">Master Artisans</a></li>
+                    <li><a href="#ai-studio">AI Story Assistant</a></li>
+                    <li><a href="javascript:void(0)" id="footerCartLink">My Craft Cart</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Hackathon Info</h4>
+                <p class="hackathon-tag">Built for College Hackathon 2026</p>
+                <p class="hackathon-desc">
+                    Tech Stack: <strong>Pure HTML5, CSS3 & Vanilla JavaScript</strong>. Zero paid dependencies. 100% responsive and locally functional.
+                </p>
+                <div class="footer-badges">
+                    <span>🇮🇳 Vocal For Local</span>
+                    <span>🏅 GI Tag Heritage</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>© 2026 KalaKriti Artisan Marketplace. Crafted with ❤️ for Indian artisans.</p>
+                <div class="footer-bottom-links">
+                    <a href="#marketplace">Fair Trade Pledge</a>
+                    <span>•</span>
+                    <a href="#marketplace">GI Authenticity</a>
+                    <span>•</span>
+                    <a href="#register">Artisan Onboarding</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================================================== -->
+    <!-- MODALS & OVERLAYS                                     -->
+    <!-- ==================================================== -->
+
+    <!-- 1. PRODUCT DETAILS MODAL (QUICK VIEW & FULL DETAILS) -->
+    <div class="modal-backdrop hidden" id="productModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalProductTitle">
+        <div class="modal-card product-modal-card">
+            <button class="modal-close-btn" id="closeProductModalBtn" aria-label="Close product view">✕</button>
+            
+            <div class="product-modal-grid">
+                <!-- Left: Product Image & Gallery -->
+                <div class="modal-image-col">
+                    <div class="modal-main-img-box">
+                        <img id="modalProductImg" src="" alt="Product Image">
+                        <span class="modal-gi-badge" id="modalGiBadge">🏅 GI TAG CERTIFIED</span>
+                    </div>
+                </div>
+
+                <!-- Right: Details & Purchase Actions -->
+                <div class="modal-details-col">
+                    <div class="modal-category-row">
+                        <span class="modal-category" id="modalCategory">Category</span>
+                        <span class="modal-origin" id="modalOrigin">Region, State</span>
+                    </div>
+
+                    <h2 class="modal-title" id="modalProductTitle">Product Title</h2>
+
+                    <div class="modal-price-rating-row">
+                        <div class="modal-price-box">
+                            <span class="modal-price" id="modalPrice">₹0</span>
+                            <span class="modal-mrp" id="modalMrp">₹0</span>
+                            <span class="modal-discount" id="modalDiscount">Save 20%</span>
+                        </div>
+                        <div class="modal-rating" id="modalRating">
+                            ★ 4.9 <small>(120 reviews)</small>
+                        </div>
+                    </div>
+
+                    <div class="modal-stock-status">
+                        <span class="stock-dot"></span>
+                        <span>In Stock • Handcrafted in limited artisan batches</span>
+                    </div>
+
+                    <!-- Craft Story & Specifications Tabs -->
+                    <div class="modal-tabs">
+                        <button class="modal-tab active" data-tab="tabStory">Craft Heritage Story</button>
+                        <button class="modal-tab" data-tab="tabSpecs">Specifications & Care</button>
+                    </div>
+
+                    <div class="modal-tab-content" id="modalTabContent">
+                        <div class="tab-pane-modal active" id="tabStory">
+                            <p class="modal-description" id="modalDescription">Detailed product description...</p>
+                        </div>
+                        <div class="tab-pane-modal hidden" id="tabSpecs">
+                            <div class="specs-grid" id="modalSpecsGrid">
+                                <!-- Populated dynamically -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Artisan Maker Card -->
+                    <div class="modal-artisan-card">
+                        <div class="artisan-mini-avatar" id="modalArtisanAvatar">MK</div>
+                        <div class="artisan-mini-info">
+                            <strong id="modalArtisanName">Artisan Name</strong>
+                            <small id="modalArtisanLocation">City, State</small>
+                            <span class="artisan-direct-tag">Direct From Artisan • 100% Fair Wage</span>
+                        </div>
+                        <button class="btn btn-sm btn-outline" id="modalContactArtisanBtn" title="Inquire directly with artisan">
+                            💬 Message
+                        </button>
+                    </div>
+
+                    <!-- Quantity & Action Buttons -->
+                    <div class="modal-actions-row">
+                        <div class="quantity-picker">
+                            <button type="button" class="qty-btn" id="modalQtyMinus" aria-label="Decrease quantity">−</button>
+                            <input type="number" id="modalQtyInput" value="1" min="1" max="10" readonly aria-label="Quantity">
+                            <button type="button" class="qty-btn" id="modalQtyPlus" aria-label="Increase quantity">+</button>
+                        </div>
+
+                        <button class="btn btn-primary add-cart-btn-large" id="modalAddToCartBtn">
+                            <span>🛍️ Add to Cart</span>
+                        </button>
+
+                        <button class="btn btn-dark buy-now-btn" id="modalBuyNowBtn">
+                            <span>⚡ Buy Now</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-security-perks">
+                        <span>🛡️ 7-Day Craft Return</span>
+                        <span>📦 Safe Wooden-Crate Packing</span>
+                        <span>🚚 All-India Delivery</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. SHOPPING CART DRAWER (SLIDE-OUT FROM RIGHT) -->
+    <div class="cart-backdrop hidden" id="cartBackdrop"></div>
+    <aside class="cart-drawer hidden" id="cartDrawer" aria-label="Shopping Cart Drawer">
+        <div class="cart-drawer-header">
+            <div class="cart-title-wrap">
+                <span class="cart-icon">🛍️</span>
+                <h3>Your Craft Bag (<span id="cartDrawerCount">0</span>)</h3>
+            </div>
+            <button class="cart-close-btn" id="closeCartBtn" aria-label="Close cart">✕</button>
+        </div>
+
+        <!-- Free Delivery Progress Bar -->
+        <div class="free-shipping-bar">
+            <div class="shipping-msg" id="shippingMsg">
+                Add <strong>₹1,499</strong> more for <strong>FREE Delivery</strong> across India!
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill" id="shippingProgressFill" style="width: 0%;"></div>
+            </div>
+        </div>
+
+        <!-- Cart Items List Container -->
+        <div class="cart-items-list" id="cartItemsList">
+            <!-- Populated via JavaScript -->
+        </div>
+
+        <!-- Cart Footer with Totals and Checkout -->
+        <div class="cart-drawer-footer" id="cartDrawerFooter">
+            <!-- Promo Code Section -->
+            <div class="coupon-section">
+                <div class="coupon-input-wrap">
+                    <input type="text" id="couponInput" placeholder="Enter coupon (e.g. HACKATHON10)" aria-label="Coupon code">
+                    <button class="btn btn-sm btn-outline" id="applyCouponBtn">Apply</button>
+                </div>
+                <div class="coupon-applied-tag hidden" id="couponAppliedTag">
+                    <span>Code <strong id="appliedCouponName"></strong> applied!</span>
+                    <button class="remove-coupon-btn" id="removeCouponBtn" title="Remove coupon">✕</button>
+                </div>
+            </div>
+
+            <!-- Price Breakdown Calculation -->
+            <div class="price-breakdown">
+                <div class="breakdown-row">
+                    <span>Subtotal:</span>
+                    <span id="cartSubtotal">₹0</span>
+                </div>
+                <div class="breakdown-row">
+                    <span>Estimated Shipping:</span>
+                    <span id="cartShipping">₹0</span>
+                </div>
+                <div class="breakdown-row discount-row hidden" id="cartDiscountRow">
+                    <span>Special Discount:</span>
+                    <span id="cartDiscount">- ₹0</span>
+                </div>
+                <div class="breakdown-row total-row">
+                    <span>Total Amount:</span>
+                    <span id="cartGrandTotal">₹0</span>
+                </div>
+            </div>
+
+            <!-- Checkout Action Buttons -->
+            <button class="btn btn-primary btn-full checkout-action-btn" id="openCheckoutBtn">
+                <span>Proceed to Checkout ➔</span>
+            </button>
+
+            <button class="btn btn-link btn-full continue-shopping-btn" id="continueShoppingBtn">
+                ← Continue Exploring Crafts
+            </button>
+        </div>
+    </aside>
+
+    <!-- 3. CHECKOUT MODAL -->
+    <div class="modal-backdrop hidden" id="checkoutModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="checkoutModalTitle">
+        <div class="modal-card checkout-modal-card">
+            <button class="modal-close-btn" id="closeCheckoutModalBtn" aria-label="Close checkout">✕</button>
+            
+            <div class="checkout-layout">
+                <!-- Left: Shipping & Payment Form -->
+                <div class="checkout-form-col">
+                    <div class="checkout-step-header">
+                        <span class="step-num">1</span>
+                        <h3 id="checkoutModalTitle">Shipping & Delivery Details</h3>
+                    </div>
+
+                    <form id="checkoutForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="custName">Full Name <span class="required">*</span></label>
+                                <input type="text" id="custName" placeholder="e.g. Priyanshu Sharma" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="custPhone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="custPhone" placeholder="e.g. 9876543210" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="custEmail">Email Address <span class="required">*</span></label>
+                            <input type="email" id="custEmail" placeholder="e.g. priyanshu@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="custAddress">Street Address / House No. <span class="required">*</span></label>
+                            <input type="text" id="custAddress" placeholder="e.g. Flat 402, Shanti Vihar, MG Road" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="custCity">City / Town <span class="required">*</span></label>
+                                <input type="text" id="custCity" placeholder="e.g. Jaipur" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="custState">State <span class="required">*</span></label>
+                                <input type="text" id="custState" placeholder="e.g. Rajasthan" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="custPincode">PIN Code <span class="required">*</span></label>
+                                <input type="text" id="custPincode" placeholder="e.g. 302001" maxlength="6" required>
+                            </div>
+                        </div>
+
+                        <!-- Payment Method Selection -->
+                        <div class="checkout-step-header divider-top">
+                            <span class="step-num">2</span>
+                            <h3>Select Payment Method</h3>
+                        </div>
+
+                        <div class="payment-methods-grid">
+                            <label class="payment-option selected">
+                                <input type="radio" name="paymentMethod" value="upi" checked>
+                                <span class="payment-radio-custom"></span>
+                                <div class="payment-info">
+                                    <strong>📱 Instant UPI / QR Code</strong>
+                                    <small>Google Pay, PhonePe, Paytm, BHIM</small>
+                                </div>
+                            </label>
+
+                            <label class="payment-option">
+                                <input type="radio" name="paymentMethod" value="cards">
+                                <span class="payment-radio-custom"></span>
+                                <div class="payment-info">
+                                    <strong>💳 Debit / Credit Card</strong>
+                                    <small>Visa, Mastercard, RuPay</small>
+                                </div>
+                            </label>
+
+                            <label class="payment-option">
+                                <input type="radio" name="paymentMethod" value="cod">
+                                <span class="payment-radio-custom"></span>
+                                <div class="payment-info">
+                                    <strong>💵 Cash on Delivery (COD)</strong>
+                                    <small>Pay cash upon delivery to your doorstep</small>
+                                </div>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full checkout-submit-btn" id="placeOrderBtn">
+                            <span>Place Order & Pay <span id="checkoutPayBtnTotal">₹0</span> ➔</span>
+                        </button>
+
+                        <p class="form-security-note center">
+                            🔒 256-bit Simulated Secure Checkout • 85%+ directly supports the artisan family.
+                        </p>
+                    </form>
+                </div>
+
+                <!-- Right: Order Summary Sidebar -->
+                <div class="checkout-summary-col">
+                    <h4>Order Summary</h4>
+                    <div class="checkout-items-preview" id="checkoutItemsPreview">
+                        <!-- Populated dynamically via JS -->
+                    </div>
+
+                    <div class="checkout-calc-card">
+                        <div class="breakdown-row">
+                            <span>Items Subtotal:</span>
+                            <span id="checkoutSubtotal">₹0</span>
+                        </div>
+                        <div class="breakdown-row">
+                            <span>Shipping:</span>
+                            <span id="checkoutShipping">₹0</span>
+                        </div>
+                        <div class="breakdown-row discount-row hidden" id="checkoutDiscountRow">
+                            <span>Coupon Savings:</span>
+                            <span id="checkoutDiscount">- ₹0</span>
+                        </div>
+                        <div class="breakdown-row total-row">
+                            <span>Total Payable:</span>
+                            <span id="checkoutTotal">₹0</span>
+                        </div>
+                    </div>
+
+                    <div class="artisan-pledge-note">
+                        <span>🇮🇳</span>
+                        <p>Your order directly empowers rural traditional Indian artisan clusters and preserves centuries-old heritage crafts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. ORDER CONFIRMATION / RECEIPT MODAL (CELEBRATION) -->
+    <div class="modal-backdrop hidden" id="orderSuccessModalBackdrop" role="dialog" aria-modal="true">
+        <div class="modal-card order-success-card">
+            <div class="success-header">
+                <div class="success-icon-wrap">🎉</div>
+                <h2>Order Placed Successfully!</h2>
+                <p>Thank you for supporting traditional Indian artisans.</p>
+            </div>
+
+            <div class="receipt-card">
+                <div class="receipt-header">
+                    <div>
+                        <span class="receipt-lbl">ORDER NUMBER</span>
+                        <strong class="receipt-id" id="receiptOrderId">KALA-2026-8819</strong>
+                    </div>
+                    <div>
+                        <span class="receipt-lbl">ESTIMATED DELIVERY</span>
+                        <strong class="receipt-date" id="receiptDeliveryDate">4 - 6 Business Days</strong>
+                    </div>
+                </div>
+
+                <div class="receipt-items-list" id="receiptItemsList">
+                    <!-- Dynamic -->
+                </div>
+
+                <div class="receipt-totals-row">
+                    <span>Total Amount Paid:</span>
+                    <strong id="receiptTotalAmount">₹0</strong>
+                </div>
+
+                <div class="receipt-impact-box">
+                    <span class="impact-emoji">🌸</span>
+                    <div>
+                        <strong>Artisan Livelihood Impact:</strong>
+                        <p>A major portion of this purchase goes directly to the master craftsmen who created these handmade treasures.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="success-actions">
+                <button class="btn btn-outline" id="printReceiptBtn">🖨️ Print Receipt</button>
+                <button class="btn btn-primary" id="continueShoppingSuccessBtn">Explore More Crafts ➔</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+    <!-- SCRIPTS -->
+    <script src="app.js"></script>
+</body>
+</html>

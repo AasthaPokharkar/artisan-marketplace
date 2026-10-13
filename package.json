@@ -1,0 +1,11 @@
+{
+  "name": "artisan-marketplace",
+  "version": "1.0.0",
+  "description": "KalaKriti - Authentic Indian Artisan Marketplace for College Hackathon",
+  "private": true,
+  "scripts": {
+    "start": "python -m http.server 3000",
+    "dev": "python -m http.server 3000",
+    "serve:frontend": "python -m http.server 3000 --directory artisan-marketplace/frontend"
+  }
+}
